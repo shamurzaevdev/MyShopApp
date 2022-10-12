@@ -125,36 +125,19 @@ final class SearchView: UIView {
         return image
     }()
 
-    lazy var caseOneView: UIView = {
+    lazy var incaseFlatView: UIView = {
         let view = UIView()
-        view.frame = CGRect(x: 15, y: 255, width: 150, height: 200)
+        view.frame = CGRect(x: 5, y: 5, width: 150, height: 200)
         view.backgroundColor = .systemGray6
         view.layer.cornerRadius = 15
         view.layer.masksToBounds = true
         return view
     }()
-
-    lazy var caseTwoView: UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 180, y: 255, width: 150, height: 200)
-        view.backgroundColor = .systemGray6
-        view.layer.cornerRadius = 15
-        view.layer.masksToBounds = true
-        return view
-    }()
-
-    lazy var caseThreeView: UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 345, y: 255, width: 150, height: 200)
-        view.backgroundColor = .systemGray6
-        view.layer.cornerRadius = 15
-        view.layer.masksToBounds = true
-        return view
-    }()
-
-    lazy var caseViewOneLable: UILabel = {
+    
+    lazy var incaseFlatLable: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 22, y: 100, width: 100, height: 100)
+        label.frame = CGRect(x: 0, y: 100, width: incaseFlatView.bounds.width, height: 100)
+        label.textAlignment = .center
         label.textColor = .label
         label.text = "Чехол Incase Flat для MacBook Pro 16 дюймов"
         label.numberOfLines = 0
@@ -162,17 +145,27 @@ final class SearchView: UIView {
         return label
     }()
 
-    lazy var caseViewOneImageView: UIImageView = {
+    lazy var incaseFlatImageView: UIImageView = {
         let image = UIImageView()
-        image.frame = CGRect(x: 15, y: 12, width: 110, height: 110)
+        image.frame = CGRect(x: 20, y: 12, width: 110, height: 110)
         image.image = UIImage(named: "Image")
         image.contentMode = .scaleAspectFit
         return image
     }()
 
-    lazy var caseViewTwoLable: UILabel = {
+    lazy var blackUnityView: UIView = {
+        let view = UIView()
+        view.frame = CGRect(x: 170, y: 5, width: 150, height: 200)
+        view.backgroundColor = .systemGray6
+        view.layer.cornerRadius = 15
+        view.layer.masksToBounds = true
+        return view
+    }()
+    
+    lazy var blackUnityLable: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 22, y: 100, width: 100, height: 100)
+        label.frame = CGRect(x: 0, y: 100, width: blackUnityView.bounds.width, height: 100)
+        label.textAlignment = .center
         label.textColor = .label
         label.text = "Cпортивный ремешок Black Unity"
         label.numberOfLines = 0
@@ -180,17 +173,27 @@ final class SearchView: UIView {
         return label
     }()
 
-    lazy var caseViewTwoImageView: UIImageView = {
+    lazy var blackUnityImageView: UIImageView = {
         let image = UIImageView()
-        image.frame = CGRect(x: 15, y: 12, width: 110, height: 110)
+        image.frame = CGRect(x: 20, y: 12, width: 110, height: 110)
         image.image = UIImage(named: "4")
         image.contentMode = .scaleAspectFit
         return image
     }()
 
-    lazy var caseViewThreeLable: UILabel = {
+    lazy var leatherCaseView: UIView = {
+        let view = UIView()
+        view.frame = CGRect(x: 335, y: 5, width: 150, height: 200)
+        view.backgroundColor = .systemGray6
+        view.layer.cornerRadius = 15
+        view.layer.masksToBounds = true
+        return view
+    }()
+
+    lazy var leatherCaseLable: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 22, y: 100, width: 100, height: 100)
+        label.frame = CGRect(x: 0, y: 100, width: leatherCaseView.bounds.width, height: 100)
+        label.textAlignment = .center
         label.textColor = .label
         label.text = "Кожаный чехол для MacBook Pro 16 дюймов"
         label.numberOfLines = 0
@@ -198,12 +201,40 @@ final class SearchView: UIView {
         return label
     }()
 
-    lazy var caseViewThreeImageView: UIImageView = {
+    lazy var leatherCaseImageView: UIImageView = {
         let image = UIImageView()
-        image.frame = CGRect(x: 15, y: 12, width: 110, height: 110)
+        image.frame = CGRect(x: 20, y: 12, width: 110, height: 110)
         image.image = UIImage(named: "2")
         image.contentMode = .scaleAspectFit
         return image
     }()
+    
+    lazy var iphonesWindowView: UIView = {
+        let view = UIView()
+        view.frame = CGRect(x: 505, y: 5, width: 150, height: 200)
+        view.backgroundColor = .systemGray6
+        view.layer.cornerRadius = 15
+        view.layer.masksToBounds = true
+        return view
+    }()
 
+    lazy var iphonesWindowLable: UILabel = {
+        let label = UILabel()
+        label.frame = CGRect(x: 0, y: 100, width: iphonesWindowView.bounds.width, height: 100)
+        label.textAlignment = .center
+        label.textColor = .label
+        label.text = "Iphone 12 Pro"
+        label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        return label
+    }()
+
+    lazy var iphonesWindowImageView: UIImageView = {
+        let image = UIImageView()
+        image.frame = CGRect(x: 20, y: 12, width: 110, height: 110)
+        image.image = UIImage(named: "iPhones")
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
 }
