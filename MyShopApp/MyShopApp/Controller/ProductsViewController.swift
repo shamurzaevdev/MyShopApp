@@ -30,6 +30,9 @@ final class ProductsViewController: UIViewController {
         static let firstLeatherImage = UIImage(named: "2")
         static let leatherSecondImage = UIImage(named: "caseBrown2")
         static let leatherThirdImage = UIImage(named: "caseBrown3")
+        static let clockFirstImage = UIImage(named: "4")
+        static let clockSecondImage = UIImage(named: "clock2")
+        static let clockThirdImage = UIImage(named: "clock3")
         static let firstRect = CGRect(x: 50, y: 0, width: 300, height: 300)
         static let secondRect = CGRect(x: 470, y: 0, width: 300, height: 300)
         static let thirdRect = CGRect(x: 830, y: 0, width: 300, height: 300)
@@ -97,6 +100,7 @@ final class ProductsViewController: UIViewController {
         setIncaseFlatsScrollView()
         setLeatherScrollView()
         setIphoneScrollView()
+        clockScrollView()
     }
     
     private func newImageViewWithImage(paramImage: UIImage?, paramFrame: CGRect) -> UIImageView {
@@ -138,6 +142,18 @@ final class ProductsViewController: UIViewController {
                                                 paramFrame: Constants.secondRect)
         productsSrollView.addSubview(secondImage)
         let thirdImage = newImageViewWithImage(paramImage: Constants.thirdIphoneImage,
+                                               paramFrame: Constants.thirdRect)
+        productsSrollView.addSubview(thirdImage)
+    }
+    
+    private func clockScrollView() {
+        guard productsImages == Constants.clockFirstImage else { return }
+        let firstImage = newImageViewWithImage(paramImage: Constants.clockFirstImage, paramFrame: Constants.firstRect)
+        productsSrollView.addSubview(firstImage)
+        let secondImage = newImageViewWithImage(paramImage: Constants.clockSecondImage,
+                                                paramFrame: Constants.secondRect)
+        productsSrollView.addSubview(secondImage)
+        let thirdImage = newImageViewWithImage(paramImage: Constants.clockThirdImage,
                                                paramFrame: Constants.thirdRect)
         productsSrollView.addSubview(thirdImage)
     }
